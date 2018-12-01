@@ -79,7 +79,10 @@
     function main() {
       // If the game ended return early to stop game
       //if () return;
-      if (didGameEnd()) return
+      if (didGameEnd()){
+        window.alert("Game Over, Your Score is: " + score);
+        return
+      }
       setTimeout(function onTick() {
         changingDirection = false;
         clearCanvas();
